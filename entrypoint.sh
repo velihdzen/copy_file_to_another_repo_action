@@ -60,6 +60,7 @@ then
 fi
 
 echo "Adding git commit"
+git config --global --add safe.directory $CLONE_DIR
 git add .
 if git status | grep -q "Changes to be committed"
 then
